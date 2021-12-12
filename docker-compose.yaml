@@ -1,5 +1,9 @@
 version: "3"
 services:
+  my-app:
+    image: public.ecr.aws/l6i0z5a3/docker-course-app:1.2
+    ports:
+      - 3000:3000
   mongodb:
     image: mongo
     ports:

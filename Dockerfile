@@ -1,5 +1,8 @@
 FROM node:13-alpine
 
+ENV MONGO_DB_USERNAME=root \
+    MONGO_DB_PWD=shani
+
 RUN mkdir -p /home/app
 
 COPY ./my-app /home/app
